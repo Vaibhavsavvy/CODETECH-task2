@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style> /* Reset some default styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    header {
+        background: #333;
+        color: #fff;
+        padding: 1rem 0;
+    }
+    
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+    
+    header .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    header .nav-links {
+        list-style: none;
+    }
+    
+    header .nav-links li {
+        display: inline;
+        margin-left: 1rem;
+    }
+    
+    header .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5rem;
+    }
+    
+    header .nav-links .login {
+        background: #ff6f61;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+    }
+    
+    header .nav-links .login:hover {
+        background: #ff4b3a;
+    }
+    
+    .hero {
+        background: url('hero-bg.jpg') no-repeat center center/cover;
+        color: #fff;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .hero .hero-content {
+        max-width: 600px;
+        padding: 0 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .hero .btn {
+        background: #ff6f61;
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    
+    .hero .btn:hover {
+        background: #ff4b3a;
+    }
+    
+    .courses {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+    
+    .courses h2 {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+    
+    .course-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .course-card {
+        background: #fff;
+        padding: 1.5rem;
+        margin: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        width: 300px;
+    }
+    
+    .course-card h3 {
+        margin-bottom: 1rem;
+    }
+    
+    footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+</style>    
+<body>
+    <header>
+        <nav>
+            <div class="logo">LearnOnline</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to LearnOnline</h1>
+            <p>Access thousands of courses and improve your skills from the comfort of your home.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section class="courses">
+        <h2>Popular Courses</h2>
+        <div class="course-list">
+            <div class="course-card">
+                <h3>Web Development</h3>
+                <p>Learn to build websites with HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="course-card">
+                <h3>Data Science</h3>
+                <p>Explore data analysis, visualization, and machine learning.</p>
+            </div>
+            <div class="course-card">
+                <h3>Graphic Design</h3>
+                <p>Master design principles and software like Photoshop and Illustrator.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 LearnOnline. All rights reserved.</p>
+    </footer>
+</body>
+</html>
